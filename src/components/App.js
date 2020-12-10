@@ -26,15 +26,22 @@ const App = () => {
 
 	return (
 		<div className="ui container comments">
+			<h1 className="ui header">Comments Page</h1>
+			<p>This is a very simple React app using only function-based components. 
+				The cards are built with Semantic UI, and random content is generated with Faker.</p>
+			<div className="ui hidden divider" />
 			<ApprovalCard>
 				<CommentDetail author={getAuthor()} time={getTime()} text={getText()} avatar={getAvatar()} />
 			</ApprovalCard>
+			<div className="ui hidden divider" />
 			<ApprovalCard>
 				<CommentDetail author={getAuthor()} time={getTime()} text={getText()} avatar={getAvatar()} />
 			</ApprovalCard>
+			<div className="ui hidden divider" />
 			<ApprovalCard>
 				<CommentDetail author={getAuthor()} time={getTime()} text={getText()} avatar={getAvatar()} />
 			</ApprovalCard>
+			<div className="ui hidden divider" />
 		</div>
 	);
 }
